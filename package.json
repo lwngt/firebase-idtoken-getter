@@ -1,0 +1,11 @@
+{
+  "name": "firebase-idtoken-getter",
+  "version": "1.0.0",
+  "description": "library to get firebase authorization's idToken",
+  "main": "index.js",
+  "keywords": [
+    "firebase"
+  ],
+  "author": "lwngt",
+  "license": "MIT"
+}
