@@ -28,7 +28,6 @@ let FirebaseTokenGetterObject = new FirebaseTokenGetter(
 );
 
 // execute to get idToken
-// execute to get idToken
 let getIdtoken = async () => {
   let token = await FirebaseTokenGetterObject.createIdTokenBycustomToken();
   console.log(token);

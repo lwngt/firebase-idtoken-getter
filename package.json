@@ -1,6 +1,6 @@
 {
   "name": "firebase-idtoken-getter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "library to get firebase authorization's idToken",
   "main": "index.js",
   "keywords": [
