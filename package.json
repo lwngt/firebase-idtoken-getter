@@ -7,5 +7,18 @@
     "firebase"
   ],
   "author": "lwngt",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "firebase": "^7.24.0",
+    "firebase-admin": "^9.3.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lwngt/firebase-idtoken-getter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lwngt/firebase-idtoken-getter/issues"
+  },
+  "homepage": "https://github.com/lwngt/firebase-idtoken-getter#readme"
 }
