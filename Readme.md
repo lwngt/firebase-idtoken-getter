@@ -19,7 +19,7 @@ If you want to get idToken of Firebase Authorization in Node.js project, you can
 
 ```
 // initial setting
-const FirebaseTokenGetter = require("FirebaseTokenGetter");
+const FirebaseTokenGetter = require("firebase-idtoken-getter");
 let FirebaseTokenGetterObject = new FirebaseTokenGetter(
   "<-- JSON File for GOOGLE_APPLICATION_CREDENTIALS -->",
   "<-- User ID of Firebase Authorization -->",
@@ -28,7 +28,12 @@ let FirebaseTokenGetterObject = new FirebaseTokenGetter(
 );
 
 // execute to get idToken
-FirebaseTokenGetterObject.createIdTokenBycustomToken();
+// execute to get idToken
+let getIdtoken = async () => {
+  let token = await FirebaseTokenGetterObject.createIdTokenBycustomToken();
+  console.log(token);
+}
+getIdtoken();
 ```
 
 ## Function
