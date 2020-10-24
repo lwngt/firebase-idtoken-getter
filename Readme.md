@@ -5,7 +5,7 @@
 This is the library to get the idToken from Firebase Authorization which you'd already set.<br>
 If you want to get idToken of Firebase Authorization in Node.js project, you can get it easily.
 
-![Firebase idToken getter](image.png)
+![Firebase idToken getter](https://github.com/lwngt/firebase-idtoken-getter/raw/master/image.png)
 
 ## Caution
 
