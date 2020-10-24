@@ -47,19 +47,19 @@ class FirebaseTokenGetter {
 
   async createIdTokenBycustomToken() {
     // execute get custom token
-    let customTokenResult = await this.getCustomToken(userId, additionalClaims);
+    let customTokenResult = await this.#getCustomToken(userId, additionalClaims);
     if (customTokenResult === null) {
       throw Error('failed to get custom token from firebase.');
     }
 
     // execute autorization with custom token
-    let executeResult = await this.executeAuthorization(customTokenResult);
+    let executeResult = await this.#executeAuthorization(customTokenResult);
     if (executeResult !== true) {
       throw Error('failed to execute firebase signin with custom token.');
     }
 
     // execute getId token
-    let idTokenResult = await this.getIdToken();
+    let idTokenResult = await this.#getIdToken();
     if (idTokenResult === null) {
       throw Error('failed to get idToken.');
     }
@@ -67,7 +67,7 @@ class FirebaseTokenGetter {
   }
 
   // get custom token
-  getCustomToken(userId, additionalClaims) {
+  #getCustomToken = (userId, additionalClaims) => {
     return new Promise((resolve, reject) =>
       admin.auth().createCustomToken(userId, additionalClaims)
         .then(function (customToken) {
@@ -82,7 +82,7 @@ class FirebaseTokenGetter {
   }
 
   // login by custom token
-  executeAuthorization(customToken) {
+  #executeAuthorization = (customToken) => {
     return new Promise((resolve, reject) =>
       firebase.auth().signInWithCustomToken(customToken)
         .then(function () {
@@ -96,7 +96,7 @@ class FirebaseTokenGetter {
   }
 
   // get Id token
-  getIdToken() {
+  #getIdToken = () => {
     return new Promise((resolve, reject) =>
       firebase.auth().currentUser.getIdToken(true).then((idToken) => {
         resolve(idToken);
