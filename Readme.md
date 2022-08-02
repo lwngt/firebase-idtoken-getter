@@ -76,6 +76,6 @@ Nothing.
 ## Licence
 
 Firebase idToken Getter<br>
-Copyright (c) 2020 [Lichtwork.com](https://www.lichtwork.com) M.Nagata<br>
+Copyright (c) 2022 [Lichtwork.com](https://www.lichtwork.com) M.Nagata<br>
 MIT License
 
