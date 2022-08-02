@@ -1,6 +1,6 @@
 {
   "name": "firebase-idtoken-getter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "library to get firebase authorization's idToken",
   "main": "index.js",
   "keywords": [
@@ -9,10 +9,9 @@
   "author": "lwngt",
   "license": "MIT",
   "dependencies": {
-    "firebase": "^7.24.0",
-    "firebase-admin": "^9.3.0"
+    "firebase": "^9.9.1",
+    "firebase-admin": "^11.0.1"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/lwngt/firebase-idtoken-getter.git"
